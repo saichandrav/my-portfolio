@@ -2,13 +2,17 @@
 import React, { useState, useEffect, useMemo } from "react";
 import { motion } from "framer-motion";
 import avatar from "../assets/avator.png";
+import resume from "../assets/resume.pdf";
 import {FaLinkedinIn, FaGithub } from "react-icons/fa6";
+import { SiLeetcode } from "react-icons/si";
+
 
 import ParticleBackground from "../components/ParticlesBackground";
 
 const socials = [
   { Icon: FaLinkedinIn, label: "LinkedIn", href: "https://www.linkedin.com/in/sai-chandra-vinnakota/" },
   { Icon: FaGithub, label: "GitHub", href: "https://github.com/saichandrav" },
+  { Icon: SiLeetcode, label: "LeetCode", href: "https://leetcode.com/u/chanduvk/" },
 ];
 
 
@@ -154,7 +158,7 @@ const Home = React.forwardRef((props, ref) => {
                 View My Work
               </a>
               <a
-                href="/Resume.pdf"
+                href={resume}
                 download
                 className="px-6 py-3 rounded-full text-lg font-medium text-black bg-white 
                 hover:bg-gray-200 shadow-lg hover:scale-105 transition-all"

@@ -112,7 +112,7 @@ const Footer = () => {
         {/* --- Copyright / Trademark --- */}
         {/* Auto-updates year dynamically */}
         <p className="text-xs text-gray-400">
-          © {new Date().getFullYear()} Sai Chandra . All rights reserved.
+          © {new Date().getFullYear()} SaiChandra . All rights reserved.
         </p>
       </motion.div>
     </footer>
