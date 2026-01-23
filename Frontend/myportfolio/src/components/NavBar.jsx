@@ -96,7 +96,7 @@ const navItems = [
 
         {/* Mobile Drawer */}
         {mobileDrawerOpen && (
-          <div className="fixed right-0 z-20 bg-neutral-100 w-full p-12 flex flex-col justify-center items-center lg:hidden">
+          <div className="fixed right-0 z-20 bg-black/90 w-full p-12 flex flex-col justify-center items-center lg:hidden">
             <ul>
               {navItems.map((item, index) => (
                 <li key={index} className="py-4">
@@ -108,7 +108,7 @@ const navItems = [
             <div className="flex space-x-6 mt-6">
               <a
                 href="#contact"
-                className="py-4 px-4 border rounded-md hover:bg-neutral-800 transition"
+                className="py-4 px-4 border bg-linear-to-r from-[#1CD8D2] via-[#00bf8f] to-[#302b63] rounded-md  transition font-semibold"
               >
                 Get In Touch 
               </a>
